@@ -1,0 +1,12 @@
+constant.character.escape/ orange
+comment/ green
+constant.language / blue
+constant.regexp /purple
+constant.sha.git-rebase/ light green
+emphasis/ italiy
+entity.name.class/ green blue
+entity.name.function/ yellow
+keyword.control/ light purple
+entity.other.attribute-name ; light-bule
+header/dark bule
+invalid:red

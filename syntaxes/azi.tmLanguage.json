@@ -3,17 +3,54 @@
 	"name": "azi",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#number"
+		},
+		{
+			"include": "#sign"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#order"
+		},
+		{
+			"include": "#begin"
+		},
+		{
+			"include": "#end"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"sign": {
+			"patterns": [{
+				"name": "constant.language.azi",
+				"match": "\\b[a-z]([a-z]|[A-Z]|[0-9])*\\b"
+			}]
+		},
+		"order": {
 			"patterns": [{
 				"name": "keyword.control.azi",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "((^`)||(\\s`))([a-z]([a-z]|[A-Z]|[0-9])*)\\b"
+			}]
+		},
+		"number":{
+			"patterns": [{
+				"name": "entity.other.attribute-name.azi",
+				"match": "\\b[0-9]+\\b"
+			}]	
+		},
+		"begin": {
+			"patterns": [{
+				"name": "entity.azi",
+				"match": "\\["
+			}]
+		},
+		
+		"end": {
+			"patterns": [{
+				"name": "entity.azi",
+				"match": "\\]"
 			}]
 		},
 		"strings": {
