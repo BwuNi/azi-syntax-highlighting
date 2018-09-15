@@ -1,0 +1,26 @@
+{
+    "name": "azi-syntax-highlighting",
+    "displayName": "AZI Syntax Highlighting",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "bwuning",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "azi",
+            "aliases": ["azi", "azi"],
+            "extensions": [".azi"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "azi",
+            "scopeName": "azi",
+            "path": "./syntaxes/azi.tmLanguage.json"
+        }]
+    }
+}

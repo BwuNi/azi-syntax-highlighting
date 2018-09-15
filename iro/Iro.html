@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://eeyo.io/iro/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://eeyo.io/iro/images/favicon_16.ico">
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <!--<link type="text/css" rel="stylesheet" href="Iro.css">
+    <link type="text/css" rel="stylesheet" href="other.css"> -->
+
+    <title>Iro</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://eeyo.io/iro/images/favicon_16.ico">
+
+    <script src="./Iro_files/ace.js.下载" type="text/javascript" charset="utf-8"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;border-radius: 2px;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style>
+    <script src="./Iro_files/ext-language_tools.js.下载" type="text/javascript" charset="utf-8"></script><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style>
+    <script src="./Iro_files/mode-text.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-rion.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-xml.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-javascript.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-python.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-ruby.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-yaml.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-json.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-css.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/mode-coffee.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script src="./Iro_files/theme-monokai.js.下载" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" language="javascript" src="./Iro_files/jszip.min.js.下载"></script>
+    <script type="text/javascript" src="./Iro_files/Iro.nocache.js.下载"></script><link rel="stylesheet" href="./Iro_files/clean.css"><script src="./Iro_files/748A06F61FE5D27DCCF83009666C237C.cache.js.下载"></script>
+    <link rel="stylesheet" href="./Iro_files/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./Iro_files/mwl1.css">
+    <style>
+
+.iro_dark_syntax_highlight_preview code, .iro_dark_syntax_highlight_preview pre { 
+  padding: 0 3px 2px;
+  box-sizing:border-box;
+  font-family:'Source Code Pro', 'Consolas','source-code-pro', monospace !important;
+  font-size: 12px !important;
+  color: #272822;
+  margin-top:8px;
+  margin-bottom:8px;
+  padding: 6px;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.iro_dark_syntax_highlight_preview {
+   background : #272822;
+   font-family: 'Source Code Pro', 'Consolas','source-code-pro', monospace !important;
+}
+
+
+.login-panel {
+   background-color:black;
+   color:white;
+   font-family:luna, Roboto;
+   font-size: 1.4em;
+}
+
+.login-indent {
+   text-color:white;
+   font-size: 1.2em;
+   margin-left:4em;
+}
+
+.login-table {
+   font-size: 1.0em;
+   vertical-align:top;
+}
+
+.login-label {
+   font-size: 1.0em;
+   margin-right:2em;
+      vertical-align:top;
+}
+
+.login-textbox {
+   font-size: 1.3em;
+   width:18em;
+   margin-left:2em;
+      font-family:luna, Roboto;
+     padding: 0.2em;
+}
+
+.login-button, .login-additional-button {
+   color:white;
+   background-color:#228;
+   border:0px;
+   margin-left:4px;
+   font-size: 1.3em;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.login-button:hover, .login-additional-button:hover {
+   background-color:#44a;
+}
+
+.login-button:active, .login-additional-button:active {
+   background-color:#a00;
+}
+    </style>
+  <script>/* FileSaver.js
+ * A saveAs() FileSaver implementation.
+ * 1.1.20151003
+ *
+ * By Eli Grey, http://eligrey.com
+ * License: MIT
+ *   See https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
+ */
+
+/*global self */
+/*jslint bitwise: true, indent: 4, laxbreak: true, laxcomma: true, smarttabs: true, plusplus: true */
+
+/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
+
+var saveAs = saveAs || (function(view) {
+	"use strict";
+	// IE <10 is explicitly unsupported
+	if (typeof navigator !== "undefined" && /MSIE [1-9]\./.test(navigator.userAgent)) {
+		return;
+	}
+	var
+		  doc = view.document
+		  // only get URL when necessary in case Blob.js hasn't overridden it yet
+		, get_URL = function() {
+			return view.URL || view.webkitURL || view;
+		}
+		, save_link = doc.createElementNS("http://www.w3.org/1999/xhtml", "a")
+		, can_use_save_link = "download" in save_link
+		, click = function(node) {
+			var event = new MouseEvent("click");
+			node.dispatchEvent(event);
+		}
+		, is_safari = /Version\/[\d\.]+.*Safari/.test(navigator.userAgent)
+		, webkit_req_fs = view.webkitRequestFileSystem
+		, req_fs = view.requestFileSystem || webkit_req_fs || view.mozRequestFileSystem
+		, throw_outside = function(ex) {
+			(view.setImmediate || view.setTimeout)(function() {
+				throw ex;
+			}, 0);
+		}
+		, force_saveable_type = "application/octet-stream"
+		, fs_min_size = 0
+		// See https://code.google.com/p/chromium/issues/detail?id=375297#c7 and
+		// https://github.com/eligrey/FileSaver.js/commit/485930a#commitcomment-8768047
+		// for the reasoning behind the timeout and revocation flow
+		, arbitrary_revoke_timeout = 500 // in ms
+		, revoke = function(file) {
+			var revoker = function() {
+				if (typeof file === "string") { // file is an object URL
+					get_URL().revokeObjectURL(file);
+				} else { // file is a File
+					file.remove();
+				}
+			};
+			if (view.chrome) {
+				revoker();
+			} else {
+				setTimeout(revoker, arbitrary_revoke_timeout);
+			}
+		}
+		, dispatch = function(filesaver, event_types, event) {
+			event_types = [].concat(event_types);
+			var i = event_types.length;
+			while (i--) {
+				var listener = filesaver["on" + event_types[i]];
+				if (typeof listener === "function") {
+					try {
+						listener.call(filesaver, event || filesaver);
+					} catch (ex) {
+						throw_outside(ex);
+					}
+				}
+			}
+		}
+		, auto_bom = function(blob) {
+			// prepend BOM for UTF-8 XML and text/* types (including HTML)
+			if (/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(blob.type)) {
+				return new Blob(["\ufeff", blob], {type: blob.type});
+			}
+			return blob;
+		}
+		, FileSaver = function(blob, name, no_auto_bom) {
+			if (!no_auto_bom) {
+				blob = auto_bom(blob);
+			}
+			// First try a.download, then web filesystem, then object URLs
+			var
+				  filesaver = this
+				, type = blob.type
+				, blob_changed = false
+				, object_url
+				, target_view
+				, dispatch_all = function() {
+					dispatch(filesaver, "writestart progress write writeend".split(" "));
+				}
+				// on any filesys errors revert to saving with object URLs
+				, fs_error = function() {
+					if (target_view && is_safari && typeof FileReader !== "undefined") {
+						// Safari doesn't allow downloading of blob urls
+						var reader = new FileReader();
+						reader.onloadend = function() {
+							var base64Data = reader.result;
+							target_view.location.href = "data:attachment/file" + base64Data.slice(base64Data.search(/[,;]/));
+							filesaver.readyState = filesaver.DONE;
+							dispatch_all();
+						};
+						reader.readAsDataURL(blob);
+						filesaver.readyState = filesaver.INIT;
+						return;
+					}
+					// don't create more object URLs than needed
+					if (blob_changed || !object_url) {
+						object_url = get_URL().createObjectURL(blob);
+					}
+					if (target_view) {
+						target_view.location.href = object_url;
+					} else {
+						var new_tab = view.open(object_url, "_blank");
+						if (new_tab == undefined && is_safari) {
+							//Apple do not allow window.open, see http://bit.ly/1kZffRI
+							view.location.href = object_url
+						}
+					}
+					filesaver.readyState = filesaver.DONE;
+					dispatch_all();
+					revoke(object_url);
+				}
+				, abortable = function(func) {
+					return function() {
+						if (filesaver.readyState !== filesaver.DONE) {
+							return func.apply(this, arguments);
+						}
+					};
+				}
+				, create_if_not_found = {create: true, exclusive: false}
+				, slice
+			;
+			filesaver.readyState = filesaver.INIT;
+			if (!name) {
+				name = "download";
+			}
+			if (can_use_save_link) {
+				object_url = get_URL().createObjectURL(blob);
+				save_link.href = object_url;
+				save_link.download = name;
+				setTimeout(function() {
+					click(save_link);
+					dispatch_all();
+					revoke(object_url);
+					filesaver.readyState = filesaver.DONE;
+				});
+				return;
+			}
+			// Object and web filesystem URLs have a problem saving in Google Chrome when
+			// viewed in a tab, so I force save with application/octet-stream
+			// http://code.google.com/p/chromium/issues/detail?id=91158
+			// Update: Google errantly closed 91158, I submitted it again:
+			// https://code.google.com/p/chromium/issues/detail?id=389642
+			if (view.chrome && type && type !== force_saveable_type) {
+				slice = blob.slice || blob.webkitSlice;
+				blob = slice.call(blob, 0, blob.size, force_saveable_type);
+				blob_changed = true;
+			}
+			// Since I can't be sure that the guessed media type will trigger a download
+			// in WebKit, I append .download to the filename.
+			// https://bugs.webkit.org/show_bug.cgi?id=65440
+			if (webkit_req_fs && name !== "download") {
+				name += ".download";
+			}
+			if (type === force_saveable_type || webkit_req_fs) {
+				target_view = view;
+			}
+			if (!req_fs) {
+				fs_error();
+				return;
+			}
+			fs_min_size += blob.size;
+			req_fs(view.TEMPORARY, fs_min_size, abortable(function(fs) {
+				fs.root.getDirectory("saved", create_if_not_found, abortable(function(dir) {
+					var save = function() {
+						dir.getFile(name, create_if_not_found, abortable(function(file) {
+							file.createWriter(abortable(function(writer) {
+								writer.onwriteend = function(event) {
+									target_view.location.href = file.toURL();
+									filesaver.readyState = filesaver.DONE;
+									dispatch(filesaver, "writeend", event);
+									revoke(file);
+								};
+								writer.onerror = function() {
+									var error = writer.error;
+									if (error.code !== error.ABORT_ERR) {
+										fs_error();
+									}
+								};
+								"writestart progress write abort".split(" ").forEach(function(event) {
+									writer["on" + event] = filesaver["on" + event];
+								});
+								writer.write(blob);
+								filesaver.abort = function() {
+									writer.abort();
+									filesaver.readyState = filesaver.DONE;
+								};
+								filesaver.readyState = filesaver.WRITING;
+							}), fs_error);
+						}), fs_error);
+					};
+					dir.getFile(name, {create: false}, abortable(function(file) {
+						// delete file if it already exists
+						file.remove();
+						save();
+					}), abortable(function(ex) {
+						if (ex.code === ex.NOT_FOUND_ERR) {
+							save();
+						} else {
+							fs_error();
+						}
+					}));
+				}), fs_error);
+			}), fs_error);
+		}
+		, FS_proto = FileSaver.prototype
+		, saveAs = function(blob, name, no_auto_bom) {
+			return new FileSaver(blob, name, no_auto_bom);
+		}
+	;
+	// IE 10+ (native saveAs)
+	if (typeof navigator !== "undefined" && navigator.msSaveOrOpenBlob) {
+		return function(blob, name, no_auto_bom) {
+			if (!no_auto_bom) {
+				blob = auto_bom(blob);
+			}
+			return navigator.msSaveOrOpenBlob(blob, name || "download");
+		};
+	}
+
+	FS_proto.abort = function() {
+		var filesaver = this;
+		filesaver.readyState = filesaver.DONE;
+		dispatch(filesaver, "abort");
+	};
+	FS_proto.readyState = FS_proto.INIT = 0;
+	FS_proto.WRITING = 1;
+	FS_proto.DONE = 2;
+
+	FS_proto.error =
+	FS_proto.onwritestart =
+	FS_proto.onprogress =
+	FS_proto.onwrite =
+	FS_proto.onabort =
+	FS_proto.onerror =
+	FS_proto.onwriteend =
+		null;
+
+	return saveAs;
+}(
+	   typeof self !== "undefined" && self
+	|| typeof window !== "undefined" && window
+	|| this.content
+));
+// `self` is undefined in Firefox for Android content script context
+// while `this` is nsIContentFrameMessageManager
+// with an attribute `content` that corresponds to the window
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports.saveAs = saveAs;
+} else if ((typeof define !== "undefined" && define !== null) && (define.amd != null)) {
+  define([], function() {
+    return saveAs;
+  });
+}
+</script><style id="ace-monokai">.ace-monokai .ace_gutter {background: #2F3129;color: #8F908A}.ace-monokai .ace_print-margin {width: 1px;background: #555651}.ace-monokai {background-color: #272822;color: #F8F8F2}.ace-monokai .ace_cursor {color: #F8F8F0}.ace-monokai .ace_marker-layer .ace_selection {background: #49483E}.ace-monokai.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #272822;border-radius: 2px}.ace-monokai .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-monokai .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #49483E}.ace-monokai .ace_marker-layer .ace_active-line {background: #202020}.ace-monokai .ace_gutter-active-line {background-color: #272727}.ace-monokai .ace_marker-layer .ace_selected-word {border: 1px solid #49483E}.ace-monokai .ace_invisible {color: #52524d}.ace-monokai .ace_entity.ace_name.ace_tag,.ace-monokai .ace_keyword,.ace-monokai .ace_meta.ace_tag,.ace-monokai .ace_storage {color: #F92672}.ace-monokai .ace_punctuation,.ace-monokai .ace_punctuation.ace_tag {color: #fff}.ace-monokai .ace_constant.ace_character,.ace-monokai .ace_constant.ace_language,.ace-monokai .ace_constant.ace_numeric,.ace-monokai .ace_constant.ace_other {color: #AE81FF}.ace-monokai .ace_invalid {color: #F8F8F0;background-color: #F92672}.ace-monokai .ace_invalid.ace_deprecated {color: #F8F8F0;background-color: #AE81FF}.ace-monokai .ace_support.ace_constant,.ace-monokai .ace_support.ace_function {color: #66D9EF}.ace-monokai .ace_fold {background-color: #A6E22E;border-color: #F8F8F2}.ace-monokai .ace_storage.ace_type,.ace-monokai .ace_support.ace_class,.ace-monokai .ace_support.ace_type {font-style: italic;color: #66D9EF}.ace-monokai .ace_entity.ace_name.ace_function,.ace-monokai .ace_entity.ace_other,.ace-monokai .ace_entity.ace_other.ace_attribute-name,.ace-monokai .ace_variable {color: #A6E22E}.ace-monokai .ace_variable.ace_parameter {font-style: italic;color: #FD971F}.ace-monokai .ace_string {color: #E6DB74}.ace-monokai .ace_comment {color: #75715E}.ace-monokai .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y}</style><style>.GFLPBV4H{position:relative;display:inline-block;}</style><script src="./Iro_files/theme-rion.js.下载"></script><style id="ace-rion">.ace-rion .ace_gutter {background: #2F3129;color: #8F908A}.ace-rion .ace_print-margin {width: 1px;background: #555651}.ace-rion {background-color: #272822;color: #ededed}.ace-rion .ace_cursor {color: #F8F8F0}.ace-rion .ace_marker-layer .ace_selection {background: #49483E}.ace-rion.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #272822;border-radius: 2px}.ace-rion .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-rion .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #49483E}.ace-rion .ace_marker-layer .ace_active-line {background: #403030}.ace-rion .ace_gutter-active-line {background-color: #272727}.ace-rion .ace_marker-layer .ace_selected-word {border: 1px solid #49483E}.ace-rion .ace_invisible {color: #52524d}.ace-rion .ace_entity.ace_name.ace_tag,.ace-rion .ace_keyword,.ace-rion .ace_paren,.ace-rion .ace_meta.ace_tag,.ace-rion .ace_storage {color: rgb(200, 25, 90) /* rion Punctuation, parenthesis */}.ace-rion .ace_punctuation,.ace-rion .ace_punctuation.ace_tag {color: #fff}.ace-rion .ace_constant.ace_character,.ace-rion .ace_constant.ace_language,.ace-rion .ace_constant.ace_numeric,.ace-rion .ace_constant.ace_other {color: #AE81FF/* rion special text such as trim, regular expressions */}.ace-rion .ace_invalid {color: #F8F8F0;background-color: #F92672}.ace-rion .ace_invalid.ace_deprecated {color: #F8F8F0;background-color: #AE81FF}.ace-rion .ace_support.ace_constant,.ace-rion .ace_support.ace_function {color: #66D9EF}.ace-rion .ace_fold {background-color: #A6E22E;border-color: #F8F8F2}.ace-rion .ace_storage.ace_type,.ace-rion .ace_support.ace_class,.ace-rion .ace_support.ace_type {color: rgb(40, 219, 40) /* rgb(90, 90, 240) rgb(10, 210, 210) rion type rgb(90, 90, 240) rgb(50, 190, 190) #67f rgb(40, 219, 40)*/}.ace-rion .ace_entity.ace_name.ace_function,.ace-rion .ace_entity.ace_other,.ace-rion .ace_entity.ace_other.ace_attribute-name,.ace-rion .ace_variable,.ace-rion .ace_variable.ace_parameter {color: rgb(238, 238, 238) /* rgb(136, 180, 34) rion Identifiers */}.ace-rion .ace_variable.ace_parameter {color: orange;}.ace-rion .ace_string {color: rgb(220, 209, 106)}.ace-rion .ace_comment {font-style: italic;color: #75715E}.ace-rion .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y}</style></head>
+ <body>
+ 
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11326588; 
+var sc_invisible=1; 
+var sc_security="316c32ba"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><script type="text/javascript" src="./Iro_files/counter.js.下载"></script>
+<noscript><div class="statcounter"><a title="free hit
+counter" href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11326588/0/316c32ba/1/" alt="free
+hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+  
+
+<iframe id="Iro" tabindex="-1" style="position: absolute; width: 0px; height: 0px; border: none; left: -1000px; top: -1000px;" src="./Iro_files/saved_resource.html"></iframe><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20cm; width: 10cm; height: 10cm; visibility: hidden;">&nbsp;</div><div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20ex; width: 10em; height: 10ex; visibility: hidden;">&nbsp;</div><div style="position: absolute; overflow: hidden; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div class="gwt-SplitLayoutPanel rionxflavor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20ex; width: 10em; height: 10ex; visibility: hidden;">&nbsp;</div><div style="position: absolute; overflow: hidden; left: 0px; top: 0px; bottom: 0px; width: 630px;"><div class="rionxflavor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20ex; width: 10em; height: 10ex; visibility: hidden;">&nbsp;</div><div style="position: absolute; overflow: hidden; left: 0em; top: 0em; right: 0em; bottom: 0em;"><div class="header_details" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div class="rionx_header" style="background-color: #323276;"><span style="margin-left: 0.8em; margin-top:0.1em;padding: 0.15em 0.15em 0.15em 0.15em; cursor:pointer;float:left;"><span style="padding:0.0em 0.7em 0.0em 0.0em;" class="rionx_invisible"><div class="fa fa-file"></div></span><span title="Iro">Iro</span></span><div class="rionx_header_icon_bank"><div class="rionx_icon"><div class="fa fa-play"></div></div><div class="rionx_icon"><div class="fa fa-save"></div></div><div class="rionx_icon"><div class="fa fa-download"></div></div><div class="rionx_icon"><div class="fa fa-question"></div></div></div></div><div id="_aceGWT0" class=" ace_editor details ace-rion ace_dark" style="font-size: 14px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: 0px; height: 17px; width: 7.6975px; left: 0px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: -9px; height: 912px; width: 57px;"><div class="ace_gutter-cell " style="height: 17px;">4</div><div class="ace_gutter-cell " style="height: 17px;">5</div><div class="ace_gutter-cell " style="height: 17px;">6</div><div class="ace_gutter-cell " style="height: 17px;">7</div><div class="ace_gutter-cell " style="height: 17px;">8</div><div class="ace_gutter-cell " style="height: 17px;">9</div><div class="ace_gutter-cell " style="height: 17px;">10</div><div class="ace_gutter-cell " style="height: 17px;">11</div><div class="ace_gutter-cell " style="height: 17px;">12</div><div class="ace_gutter-cell " style="height: 17px;">13</div><div class="ace_gutter-cell " style="height: 17px;">14</div><div class="ace_gutter-cell " style="height: 17px;">15</div><div class="ace_gutter-cell " style="height: 17px;">16</div><div class="ace_gutter-cell " style="height: 17px;">17</div><div class="ace_gutter-cell " style="height: 17px;">18</div><div class="ace_gutter-cell " style="height: 17px;">19</div><div class="ace_gutter-cell " style="height: 17px;">20</div><div class="ace_gutter-cell " style="height: 17px;">21</div><div class="ace_gutter-cell " style="height: 17px;">22</div><div class="ace_gutter-cell " style="height: 17px;">23</div><div class="ace_gutter-cell " style="height: 17px;">24</div><div class="ace_gutter-cell " style="height: 17px;">25</div><div class="ace_gutter-cell " style="height: 17px;">26</div><div class="ace_gutter-cell " style="height: 17px;">27</div><div class="ace_gutter-cell " style="height: 17px;">28</div><div class="ace_gutter-cell " style="height: 17px;">29</div><div class="ace_gutter-cell " style="height: 17px;">30</div><div class="ace_gutter-cell " style="height: 17px;">31</div><div class="ace_gutter-cell " style="height: 17px;">32</div><div class="ace_gutter-cell " style="height: 17px;">33</div><div class="ace_gutter-cell " style="height: 17px;">34</div><div class="ace_gutter-cell " style="height: 17px;">35</div><div class="ace_gutter-cell " style="height: 17px;">36</div><div class="ace_gutter-cell " style="height: 17px;">37</div><div class="ace_gutter-cell " style="height: 17px;">38</div><div class="ace_gutter-cell " style="height: 17px;">39</div><div class="ace_gutter-cell " style="height: 17px;">40</div><div class="ace_gutter-cell " style="height: 17px;">41</div><div class="ace_gutter-cell " style="height: 17px;">42</div><div class="ace_gutter-cell " style="height: 17px;">43</div><div class="ace_gutter-cell " style="height: 17px;">44</div><div class="ace_gutter-cell " style="height: 17px;">45</div><div class="ace_gutter-cell " style="height: 17px;">46</div><div class="ace_gutter-cell " style="height: 17px;">47</div><div class="ace_gutter-cell " style="height: 17px;">48</div><div class="ace_gutter-cell " style="height: 17px;">49</div><div class="ace_gutter-cell " style="height: 17px;">50</div><div class="ace_gutter-cell " style="height: 17px;">51</div><div class="ace_gutter-cell " style="height: 17px;">52</div><div class="ace_gutter-cell " style="height: 17px;">53</div><div class="ace_gutter-cell " style="height: 17px;">54</div><div class="ace_gutter-cell " style="height: 17px;">55</div><div class="ace_gutter-cell " style="height: 17px;">56</div><div class="ace_gutter-cell " style="height: 17px;">57</div></div><div class="ace_gutter-active-line" style="top: -60px; height: 17px;"></div></div><div class="ace_scroller" style="left: 57px; right: 17px; bottom: 0px;"><div class="ace_content" style="margin-top: -9px; width: 556px; height: 912px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 619.8px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">##</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Press Ctrl + '+'/'-' To Zoom in</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Press Ctrl + S to save and recalculate... </span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Documents are saved to web storage.</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Only one save slot supported.</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Matches cannot span lines.</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Unicode chars must be defined in \u0000 to \uffff format.</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * All matches must be contained by a single group ( ... )</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Look behinds not permitted, (?&lt;= or (?&lt;!</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Look forwards are permitted (?= or (?!</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Constants are defined as __my_const = (......)</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * The \= format allows unescaped regular expressions</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Constants referenced by match \= $${__my_const}</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Constants can reference other constants</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * You are free to delete all the default scopes.</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## * Twitter : ainslec , Web: http://eeyo.io/iro</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">##</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">################################################################</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">name                   <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">mysample</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">file_extensions <span class="ace_keyword ace_operator">[</span><span class="ace_keyword ace_operator">]</span>     <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">mysample</span><span class="ace_keyword ace_operator">;</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">################################################################</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## Constants</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">################################################################</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">__MY_CONSTANT <span class="ace_keyword ace_operator">\=</span> <span class="ace_variable ace_parameter">(\b[a-z][a-z0-9]*)</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">################################################################</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">## Styles</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_comment ace_line">################################################################</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_storage ace_type">styles</span> <span class="ace_keyword ace_operator">[</span><span class="ace_keyword ace_operator">]</span> <span class="ace_keyword ace_operator">{</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_variable ace_language">.comment</span> <span class="ace_keyword ace_operator">:</span> <span class="ace_storage ace_type">style</span> <span class="ace_keyword ace_operator">{</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   color                 <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">light_green</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   italic                <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">true</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   ace_scope             <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">comment</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   textmate_scope        <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">comment</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   pygments_scope        <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">Comment</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_keyword ace_operator">}</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_variable ace_language">.keyword</span> <span class="ace_keyword ace_operator">:</span> <span class="ace_storage ace_type">style</span> <span class="ace_keyword ace_operator">{</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   color     <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">cyan</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   ace_scope             <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">keyword</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   textmate_scope        <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">keyword</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   pygments_scope        <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">Keyword</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_keyword ace_operator">}</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px"><span class="ace_variable ace_language">.numeric</span> <span class="ace_keyword ace_operator">:</span> <span class="ace_storage ace_type">style</span> <span class="ace_keyword ace_operator">{</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   color                 <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">gold</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   ace_scope             <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">constant.numeric</span></div></div><div class="ace_line_group" style="height: 17px;"><div class="ace_line" style="height:17px">   textmate_scope        <span class="ace_keyword ace_operator">=</span> <span class="ace_string ace_unquoted">constant.numeric</span></div></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: -51px; width: 7.6975px; height: 17px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 3213px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 57px; right: 17px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 556px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div><div style="text-align: center;position: absolute; padding: 1px; padding-left:4px; padding-right:4px;border-radius: 2px;bottom:16px;right:20px; visibility:visible;margin: 0;background: #393939;color: #fff;z-index: 97;opacity: 1.0;cursor: pointer;;font-size:0.9em;font-family: &#39;Open Sans&#39;, Roboto, sans-serif;">Menu</div></div></div></div></div></div><div style="position: absolute; overflow: hidden; left: 630px; top: 0px; bottom: 0px; width: 8px;"><div class="gwt-SplitLayoutPanel-HDragger" style="width: 8px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"></div></div><div style="position: absolute; overflow: hidden; left: 638px; top: 0px; right: 0px; bottom: 0px;"><div class="gwt-TabLayoutPanel rionxflavor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20ex; width: 10em; height: 10ex; visibility: hidden;">&nbsp;</div><div style="position: absolute; overflow: hidden; left: 0px; top: 0px; right: 0px; height: 3.15em;"><div class="gwt-TabLayoutPanelTabs" style="position: absolute; left: 0px; right: 0px; bottom: 0px; width: 16384px;"><div class="gwt-TabLayoutPanelTab GFLPBV4H gwt-TabLayoutPanelTab-selected"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Debug</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Textmate</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Atom</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Ace</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Pygments</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Rouge</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">Sublime 3</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">CSS</div></div></div><div class="gwt-TabLayoutPanelTab GFLPBV4H"><div class="gwt-TabLayoutPanelTabInner"><div class="gwt-Label">...</div></div></div></div></div><div style="position: absolute; overflow: hidden; left: 0px; top: 3.15em; right: 0px; bottom: 0px;"><div class="gwt-TabLayoutPanelContentContainer" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20ex; width: 10em; height: 10ex; visibility: hidden;">&nbsp;</div><div style="position: absolute; overflow: hidden; left: 0%; top: 0%; width: 100%; height: 100%;"><div class="gwt-SplitLayoutPanel gwt-TabLayoutPanelContent" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div aria-hidden="true" style="position: absolute; z-index: -32767; top: -20ex; width: 10em; height: 10ex; visibility: hidden;">&nbsp;</div><div style="position: absolute; overflow: hidden; left: 0px; top: 0px; right: 0px; height: 300px;"><div id="_aceGWT8" class=" ace_editor ace-monokai ace_dark" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: 187px; height: 17px; width: 7.6975px; left: 137.673px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 334px; width: 49px;"><div class="ace_gutter-cell " style="height: 17px;">1</div><div class="ace_gutter-cell " style="height: 17px;">2</div><div class="ace_gutter-cell " style="height: 17px;">3</div><div class="ace_gutter-cell " style="height: 17px;">4</div><div class="ace_gutter-cell " style="height: 17px;">5</div><div class="ace_gutter-cell " style="height: 17px;">6</div><div class="ace_gutter-cell " style="height: 17px;">7</div><div class="ace_gutter-cell " style="height: 17px;">8</div><div class="ace_gutter-cell " style="height: 17px;">9</div><div class="ace_gutter-cell " style="height: 17px;">10</div><div class="ace_gutter-cell " style="height: 17px;">11</div><div class="ace_gutter-cell " style="height: 17px;">12</div><div class="ace_gutter-cell " style="height: 17px;">13</div><div class="ace_gutter-cell " style="height: 17px;">14</div><div class="ace_gutter-cell " style="height: 17px;">15</div><div class="ace_gutter-cell " style="height: 17px;">16</div><div class="ace_gutter-cell " style="height: 17px;">17</div><div class="ace_gutter-cell " style="height: 17px;">18</div><div class="ace_gutter-cell " style="height: 17px;">19</div></div><div class="ace_gutter-active-line" style="top: 187px; height: 17px;"></div></div><div class="ace_scroller" style="left: 49px; right: 17px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 312px; height: 334px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 619.8px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:17px;top:187px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:17px"></div><div class="ace_line" style="height:17px">execute "song";</div><div class="ace_line" style="height:17px"></div><div class="ace_line" style="height:17px">group {</div><div class="ace_line" style="height:17px">   execute 1;</div><div class="ace_line" style="height:17px">   execute 2;</div><div class="ace_line" style="height:17px">   // This is a comment</div><div class="ace_line" style="height:17px">   print "hello" " ";</div><div class="ace_line" style="height:17px">   fskf090</div><div class="ace_line" style="height:17px">   00008989</div><div class="ace_line" style="height:17px">   00dsds</div><div class="ace_line" style="height:17px">   /* This </div><div class="ace_line" style="height:17px">   is </div><div class="ace_line" style="height:17px">   a </div><div class="ace_line" style="height:17px">   multiline </div><div class="ace_line" style="height:17px">   comment */</div><div class="ace_line" style="height:17px">   a (1,2,3);</div><div class="ace_line" style="height:17px">   a;</div><div class="ace_line" style="height:17px">   group {</div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 88.6725px; top: 187px; width: 7.6975px; height: 17px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 374px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 49px; right: 17px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 312px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; left: 0px; top: 300px; right: 0px; height: 8px;"><div class="gwt-SplitLayoutPanel-VDragger" style="height: 8px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px;"></div></div><div style="position: absolute; overflow: hidden; left: 0px; top: 308px; right: 0px; bottom: 0px;"><div class="iro_dark_syntax_highlight_preview" style="overflow: auto; position: absolute; zoom: 1; left: 0px; top: 0px; right: 0px; bottom: 0px;background-color:#272822;background-color:#272822;background-color:#272822;background-color:#272822;background-color:#272822;"><div style="position: relative; zoom: 1;"><div class="iro_dark_syntax_highlight_preview"><div></div><div class="gwt-HTML"><pre style="background-color:#272822;color:#dddddd;" spellcheck="false"><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">execute</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::118
+REGEX : (\&quot;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">"</span><span style="color:#a52;" title="
+STYLE : .text
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::118 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">song</span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::118 -&gt; ANON::122
+REGEX : (\&quot;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">"</span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::113
+REGEX : (;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">;</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"></span>
+<span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">group</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103
+REGEX : (\{)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">{</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">execute</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#cb6;" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">1</span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::113
+REGEX : (;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">;</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">execute</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#cb6;" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">2</span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::113
+REGEX : (;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">;</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color: rgb(153, 204, 34); font-style: italic; background-color: rgb(39, 40, 34);" title="
+STYLE : .comment
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::144
+REGEX : (//.*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">// This is a comment</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">print</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::118
+REGEX : (\&quot;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">"</span><span style="color:#a52;" title="
+STYLE : .text
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::118 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">hello</span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::118 -&gt; ANON::122
+REGEX : (\&quot;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">"</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;" style="background-color: rgb(39, 40, 34);"> </span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::118
+REGEX : (\&quot;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">"</span><span style="color:#a52;" title="
+STYLE : .text
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::118 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::118 -&gt; ANON::122
+REGEX : (\&quot;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">"</span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::113
+REGEX : (;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">;</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">fskf090</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color: rgb(204, 187, 102); background-color: rgb(39, 40, 34);" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">00008989</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;" style="background-color: rgb(39, 40, 34);">   </span><span style="color: rgb(204, 187, 102); background-color: rgb(39, 40, 34);" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">00</span><span style="color: rgb(255, 255, 255); background-color: rgb(39, 40, 34);" title="
+STYLE : .illegal
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::149
+REGEX : ([^\s])" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">d</span><span style="color: rgb(255, 255, 255); background-color: rgb(39, 40, 34);" title="
+STYLE : .illegal
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::149
+REGEX : ([^\s])" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">s</span><span style="color: rgb(255, 255, 255); background-color: rgb(39, 40, 34);" title="
+STYLE : .illegal
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::149
+REGEX : ([^\s])" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">d</span><span style="color: rgb(255, 255, 255); background-color: rgb(39, 40, 34);" title="
+STYLE : .illegal
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::149
+REGEX : ([^\s])" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">s</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;" style="background-color: rgb(39, 40, 34);">   </span><span style="color:#9c2;font-style: italic;" title="
+STYLE : .comment
+CONTEXT     : multi_line_comment::175
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177
+REGEX : (/\*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">/*</span><span style="color: rgb(153, 204, 34); font-style: italic; background-color: rgb(39, 40, 34);" title="
+STYLE : .comment
+CONTEXT     : multi_line_comment::175
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> This </span>
+<span style="color: rgb(153, 204, 34); font-style: italic; background-color: rgb(39, 40, 34);" title="
+STYLE : .comment
+CONTEXT     : multi_line_comment::175
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   is </span>
+<span style="color:#9c2;font-style: italic;" title="
+STYLE : .comment
+CONTEXT     : multi_line_comment::175
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   a </span>
+<span style="color: rgb(153, 204, 34); font-style: italic; background-color: rgb(39, 40, 34);" title="
+STYLE : .comment
+CONTEXT     : multi_line_comment::175
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   multiline </span>
+<span style="color: rgb(153, 204, 34); font-style: italic; background-color: rgb(39, 40, 34);" title="
+STYLE : .comment
+CONTEXT     : multi_line_comment::175
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177 -&gt; NOMATCH
+REGEX : [NULL]" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   comment </span><span style="color:#9c2;font-style: italic;" title="
+STYLE : .comment
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::177 -&gt; ANON::181
+REGEX : (\*/)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">*/</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">a</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color: rgb(204, 17, 85); background-color: rgb(39, 40, 34);" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128
+REGEX : (\()" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">(</span><span style="color:#cb6;" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">1</span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128 -&gt; ANON::136
+REGEX : (,)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">,</span><span style="color:#cb6;" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">2</span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128 -&gt; ANON::136
+REGEX : (,)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">,</span><span style="color:#cb6;" title="
+STYLE : .numeric
+CONTEXT     : numeric::164
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128 -&gt; ANON::165
+REGEX : (\b\d+)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">3</span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::128 -&gt; ANON::131
+REGEX : (\))" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">)</span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::113
+REGEX : (;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">;</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">a</span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::113
+REGEX : (;)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">;</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#aff;" title="
+STYLE : .keyword
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::96
+REGEX : (\b[a-z][a-z0-9]*)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">group</span><span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;"> </span><span style="color:#c15;" title="
+STYLE : .punctuation
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::103
+REGEX : (\{)" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">{</span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span>
+<span title="REGION NOT MATCHED
+
+CONTEXT     : main::94
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::103 -&gt; NOMATCH" onmouseover="this.style.backgroundColor=&#39;#442828&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">   </span><span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::103 -&gt; ANON::106
+REGEX : (\})" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">}</span>
+<span style="color:#c15;" title="
+STYLE : .punctuation
+STACK : main::94 -&gt; ANON::103 -&gt; ANON::106
+REGEX : (\})" onmouseover="this.style.backgroundColor=&#39;#3a3a3a&#39;" onmouseout="this.style.backgroundColor=&#39;#272822&#39;">}</span></pre></div></div></div></div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT1" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT2" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT4" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT5" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT6" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT7" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div id="_aceGWT3" class=" ace_editor ace-monokai ace_dark gwt-TabLayoutPanelContent" aria-hidden="true" style="font-size: 14px; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; top: -1000px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled"></div><div class="ace_gutter-active-line"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px;"><div class="ace_scrollbar-inner" style="width: 22px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px;"><div class="ace_scrollbar-inner" style="height: 22px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><div style="position: absolute; overflow: hidden; display: none; left: 0px; top: 0px; right: 0px; bottom: 0px;"><div class="iro_dark_syntax_highlight_preview gwt-TabLayoutPanelContent" aria-hidden="true" style="overflow: auto; position: absolute; zoom: 1; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none;"><div style="position: relative; zoom: 1;"><div class="gwt-HTML"><style>#fivelamps table,tr,td,th { text-align:left; border-collapse: collapse;border-spacing: 0px;font-family: 'Segoe UI', 'Roboto',sans-serif !important; color:white; background-color: rgb(39, 40, 34) !important;border-spacing: 0px !important; border-style: none !important;} #providedd {color:rgb(0,210,0);}#collisionn {color:rgb(240,40,40);} #notprovidedd{color:rgb(255,255,0);}#inheritedd{color:rgb(200,200,200);}#orphann {color:rgb(150,150,150);text-decoration: line-through;}#fivelamps tbody tr:hover td, #fivelamps tbody tr:hover th { background-color: #333 !important;  }</style><div class="iro_dark_syntax_highlight_preview"><h2 style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.5em;">Scope Information for "mysample"</h2><p style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.0em;">Styles represent containers for per-engine scopes to be applied to matched text. Iro requires that every piece of matched text that is matched is assigned to an internal style. In turn, these styles can be mapped on a one-to-one basis with the scope representations of various exporters.</p><p style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.0em;">Whilst it is not a requirement to fully map to all exporters, it is strongly encouraged to define a full set of mappings for all exporters. This screen highlights where there is a gap in coverage, or perhaps where there is ambiguity.</p><table id="fivelamps"><tbody><tr style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.12em;"><th style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.12em;">Scope</th><th style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.12em;">Textmate Family</th><th style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.12em;">Ace</th><th style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.12em;">Pygments / Rouge</th></tr><tr><td>.comment</td><td id="providedd">comment</td><td id="providedd">comment</td><td id="providedd">Comment</td></tr><tr><td>.illegal</td><td id="providedd">invalid</td><td id="providedd">invalid</td><td id="providedd">Generic.Error</td></tr><tr><td>.keyword</td><td id="providedd">keyword</td><td id="providedd">keyword</td><td id="providedd">Keyword</td></tr><tr><td>.numeric</td><td id="providedd">constant.numeric</td><td id="providedd">constant.numeric</td><td id="providedd">Number</td></tr><tr><td>.punctuation</td><td id="providedd">punctuation</td><td id="providedd">punctuation</td><td id="providedd">Punctuation</td></tr><tr><td>.text</td><td id="providedd">text</td><td id="providedd">text</td><td id="providedd">String</td></tr></tbody></table><br><div style="background-color:rgb(0,140,0);color:white;text-align:center;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.4em;">No problems detected.</div><p style="color:white;font-family:&#39;Segoe UI&#39;, &#39;Roboto&#39;; font-size:1.0em;">Every scope has an explicit or unique exporter scope assigned for every supported exporter.</p></div></div></div></div></div></div></div></div></div><div style="text-align: center;position: absolute; padding: 1px; padding-left:4px; padding-right:4px;border-radius: 2px;bottom:16px;right:20px; visibility:visible;margin: 0;background: #242;color: #fff;z-index: 97;opacity: 1.0;cursor: pointer;;font-size:0.9em;font-family: &#39;Open Sans&#39;, Roboto, sans-serif;">Fresh (Debuggable)</div></div></div></div><st-div id="__selection-translator__"> <st-div class="__st-box__" style="display: none; position: fixed; z-index: 99999; left: 0px; top: 0px; transform: translateX(858px) translateY(259px);"> <st-header> <st-span class="st-icon-pin" title="固定"></st-span> <st-span class="st-icon-down-open" title="展开"></st-span> <st-span class="st-icon-cog" title="设置"></st-span> </st-header> <st-div class="__query-form__" style="display: none;"> <st-div> <textarea placeholder="输入要翻译的句子或单词"></textarea> </st-div> <st-div> <select> <option value="">自动判断</option> <option value="zh">中文</option><option value="zh-CN">中文(简体)</option><option value="zh-HK">中文(香港)</option><option value="zh-TW">中文(繁体)</option><option value="en">英语</option><option value="ja">日语</option><option value="ko">朝鲜语</option><option value="de">德语</option><option value="fr">法语</option><option value="ru">俄语</option><option value="th">泰语</option><option value="af">南非语</option><option value="ar">阿拉伯语</option><option value="az">阿塞拜疆语</option><option value="be">比利时语</option><option value="bg">保加利亚语</option><option value="ca">加泰隆语</option><option value="cs">捷克语</option><option value="cy">威尔士语</option><option value="da">丹麦语</option><option value="dv">第维埃语</option><option value="el">希腊语</option><option value="eo">世界语</option><option value="es">西班牙语</option><option value="et">爱沙尼亚语</option><option value="eu">巴士克语</option><option value="fa">法斯语</option><option value="fi">芬兰语</option><option value="fo">法罗语</option><option value="gl">加里西亚语</option><option value="gu">古吉拉特语</option><option value="he">希伯来语</option><option value="hi">印地语</option><option value="hr">克罗地亚语</option><option value="hu">匈牙利语</option><option value="hy">亚美尼亚语</option><option value="id">印度尼西亚语</option><option value="is">冰岛语</option><option value="it">意大利语</option><option value="ka">格鲁吉亚语</option><option value="kk">哈萨克语</option><option value="kn">卡纳拉语</option><option value="kok">孔卡尼语</option><option value="ky">吉尔吉斯语</option><option value="lt">立陶宛语</option><option value="lv">拉脱维亚语</option><option value="mi">毛利语</option><option value="mk">马其顿语</option><option value="mn">蒙古语</option><option value="mr">马拉地语</option><option value="ms">马来语</option><option value="mt">马耳他语</option><option value="nb">挪威语(伯克梅尔)</option><option value="nl">荷兰语</option><option value="ns">北梭托语</option><option value="pa">旁遮普语</option><option value="pl">波兰语</option><option value="pt">葡萄牙语</option><option value="qu">克丘亚语</option><option value="ro">罗马尼亚语</option><option value="sa">梵文</option><option value="se">北萨摩斯语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sq">阿尔巴尼亚语</option><option value="sv">瑞典语</option><option value="sw">斯瓦希里语</option><option value="syr">叙利亚语</option><option value="ta">泰米尔语</option><option value="te">泰卢固语</option><option value="tl">塔加路语</option><option value="tn">茨瓦纳语</option><option value="tr">土耳其语</option><option value="ts">宗加语</option><option value="tt">鞑靼语</option><option value="uk">乌克兰语</option><option value="ur">乌都语</option><option value="uz">乌兹别克语</option><option value="vi">越南语</option><option value="xh">班图语</option><option value="zu">祖鲁语</option> </select> <st-div class="__exchange__"> <st-span class="st-icon-exchange"></st-span> </st-div> <select> <option value="">自动选择</option> <option value="zh">中文</option><option value="zh-CN">中文(简体)</option><option value="zh-HK">中文(香港)</option><option value="zh-TW">中文(繁体)</option><option value="en">英语</option><option value="ja">日语</option><option value="ko">朝鲜语</option><option value="de">德语</option><option value="fr">法语</option><option value="ru">俄语</option><option value="th">泰语</option><option value="af">南非语</option><option value="ar">阿拉伯语</option><option value="az">阿塞拜疆语</option><option value="be">比利时语</option><option value="bg">保加利亚语</option><option value="ca">加泰隆语</option><option value="cs">捷克语</option><option value="cy">威尔士语</option><option value="da">丹麦语</option><option value="dv">第维埃语</option><option value="el">希腊语</option><option value="eo">世界语</option><option value="es">西班牙语</option><option value="et">爱沙尼亚语</option><option value="eu">巴士克语</option><option value="fa">法斯语</option><option value="fi">芬兰语</option><option value="fo">法罗语</option><option value="gl">加里西亚语</option><option value="gu">古吉拉特语</option><option value="he">希伯来语</option><option value="hi">印地语</option><option value="hr">克罗地亚语</option><option value="hu">匈牙利语</option><option value="hy">亚美尼亚语</option><option value="id">印度尼西亚语</option><option value="is">冰岛语</option><option value="it">意大利语</option><option value="ka">格鲁吉亚语</option><option value="kk">哈萨克语</option><option value="kn">卡纳拉语</option><option value="kok">孔卡尼语</option><option value="ky">吉尔吉斯语</option><option value="lt">立陶宛语</option><option value="lv">拉脱维亚语</option><option value="mi">毛利语</option><option value="mk">马其顿语</option><option value="mn">蒙古语</option><option value="mr">马拉地语</option><option value="ms">马来语</option><option value="mt">马耳他语</option><option value="nb">挪威语(伯克梅尔)</option><option value="nl">荷兰语</option><option value="ns">北梭托语</option><option value="pa">旁遮普语</option><option value="pl">波兰语</option><option value="pt">葡萄牙语</option><option value="qu">克丘亚语</option><option value="ro">罗马尼亚语</option><option value="sa">梵文</option><option value="se">北萨摩斯语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sq">阿尔巴尼亚语</option><option value="sv">瑞典语</option><option value="sw">斯瓦希里语</option><option value="syr">叙利亚语</option><option value="ta">泰米尔语</option><option value="te">泰卢固语</option><option value="tl">塔加路语</option><option value="tn">茨瓦纳语</option><option value="tr">土耳其语</option><option value="ts">宗加语</option><option value="tt">鞑靼语</option><option value="uk">乌克兰语</option><option value="ur">乌都语</option><option value="uz">乌兹别克语</option><option value="vi">越南语</option><option value="xh">班图语</option><option value="zu">祖鲁语</option> </select> </st-div> <st-div> <select> <option value="YouDao">有道翻译</option> <option value="BaiDu">百度翻译</option> <option value="Google">谷歌翻译</option> <option value="GoogleCN">谷歌翻译（国内）</option> </select> <st-div class="__action-list__"> <st-div class="__button__ __btn-translate__">翻译 <st-span class="st-icon-down-dir"></st-span> </st-div> <st-div class="__expand__"> <st-div class="__button__">朗读</st-div> <st-div class="__button__">复制</st-div> </st-div> </st-div> </st-div> </st-div> <st-div class="__translate-result__" style="display: none;">正在查询，请稍候……</st-div> <st-div class="__translate-result__"> <st-div style="display: none;"> <st-span></st-span> <st-span class="__retry__">重试</st-span> </st-div> <st-div> <st-div class="__phonetic__"> <st-span style="display: none;"></st-span> <st-span class="__copy-and-read__"> <st-span>朗读</st-span> <st-span style="display: none;">复制</st-span> </st-span> </st-div> <st-div style="display: none;"> <st-ul>  </st-ul> <st-div class="__copy-and-read__"> <st-span class="__copy-and-read__">复制</st-span> </st-div> </st-div> <st-div style="display: none;">  <st-div class="__copy-and-read__"> <st-span class="__copy-and-read__">朗读</st-span> <st-span class="__copy-and-read__">复制</st-span> </st-div> </st-div> </st-div> </st-div> <st-footer> <st-span style="">via <a target="_blank" href="https://eeyo.io/iro/">谷歌翻译（国内）</a></st-span> </st-footer> </st-div> <st-div class="__st-btn__" style="display: none; position: fixed; z-index: 99999; left: 0px; top: 0px; transform: translateX(858px) translateY(259px);">译</st-div> </st-div></body></html>

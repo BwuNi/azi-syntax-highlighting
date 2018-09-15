@@ -1,0 +1,1154 @@
+html{
+   background-color: rgb(47, 49, 41);
+}
+
+.rionxflavor {
+   /*background-color: rgb(47, 49, 41);*/
+   background-color: rgb(36,36,36);
+   font-size: 1.0em;
+   font-family: Roboto, 'Open Sans', sans-serif;
+   color: white; /* Default text colour to white */
+}
+
+/**
+ * Start of documentation section 
+ **/
+.rionx_black_class {
+   background-color:black;
+}
+
+.rionx_doc {
+   font-family: Roboto, 'Open Sans', sans-serif;
+   font-size: 1.0em;
+   background-color: #fff;
+   color:#000;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.rionx_doc body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.0em;
+
+}
+
+.rionx_doc h1 {
+   color: #111;
+   padding-top: 0.2em;
+   padding-bottom: 0.2em;
+   font-size: 2.0em;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+
+}
+
+.rionx_doc p,li {
+  /*margin-left:1% */
+}
+
+
+
+.rionx_doc_wrapper > .rionx_doc  {
+  padding:1em;
+}
+      
+.rionx_doc table {
+  border-width: 1px;
+  border-spacing: 2px;
+  border-style: none;
+  border-color: gray;
+  border-collapse: collapse;
+  text-size: inherit;
+  color:#111;
+  font-family:inherit;
+}
+
+.rionx_doc table a {
+
+  color:#44b;
+  font-weight:normal !important;
+  
+}
+
+.rionx_doc table td {
+  border-width: 1px;
+  padding: 0.3em;
+  border-style: solid;
+  border-color: #616161;
+  background-color: white;
+  -moz-border-radius:;
+  text-align: left;
+  text-size: inherit;
+  font-family: 'Roboto', sans-serif;
+  vertical-align:top;
+}
+
+.rionx_doc table th {
+  border-width: 1px;
+  padding: 3px;
+  border-style: solid;
+  border-color: #616161;
+  background-color: rgb(220,220,220) !important;
+  text-transform:capitalize;
+  -moz-border-radius:;
+  text-align: left;
+  font-family:inherit;
+  font-weight:normal !important;
+  font-size: 1.05em;
+}
+
+.rionx_doc pre {
+
+  padding:1em;
+  border-color:#444;
+  border-width:0px !important;
+  border-style: dashed;
+  font-family: 'Source Code Pro' !important;
+  background-color:rgb(38,39,33)
+}
+
+.rionx-preview-input,
+.rion_obj_id,
+.rion_attr_id,
+.rion_col_id,
+.rion_dictionary,  
+.rion_type,
+.rion_value,
+.rion_metadata,
+.rion_comments,
+.rion_ws,
+.rion_error_message,
+.rion_quotes,
+.rion_active {
+   font-family: 'Source Code Pro', 'Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro', monospace;
+   font-size: 12px;
+}
+
+.rion_default {
+   color:#eeeeee;
+   font-weight: normal;
+}
+
+.rion_obj_id {
+   color: #eeeeee;
+   font-weight:normal;
+}
+
+.rion_col_id {
+   color:#eeeeee;
+   font-weight:normal
+   ;
+}
+
+.rion_attr_id {
+   color:#eeeeee;
+   font-weight:normal;
+}
+
+.rion_type {
+   color: rgb(100,100,255);
+   font-weight:normal;
+}
+
+.rion_dictionary {
+   color: rgb(139, 69, 19);
+   font-weight:bold;
+   font-style: italic;
+}
+
+.rion_value {
+   font-style:normal;
+   color: #cccc55;
+}
+   
+.rion_active {
+   font-style:italic;
+   color: rgb(180, 20, 20);
+}
+
+.rion_error_message {
+   font-style:normal;
+   font-weight:bold;
+   color: rgb(180, 20, 20); 
+}
+
+.rion_ws {
+   color:#992222;
+   font-weight: normal;
+}
+
+.rion_punctuation {
+   color:#992222;
+   font-weight: normal;
+}
+
+.rion_quotes {
+   font-style:italic;
+   color:#0000ee;
+}
+
+.rion_comments {
+   font-weight: normal;
+   color:#777;
+}
+.rion_annotation,
+.rion_annotation .rion_default,
+.rion_annotation .rion_obj_id,
+.rion_annotation .rion_attr_id,
+.rion_annotation .rion_col_id,
+.rion_annotation .rion_type,
+.rion_annotation .rion_value,
+.rion_annotation .rion_quotes,
+.rion_annotation .rion_dictionary,
+.rion_annotation .rion_comments,
+.rion_annotation .rion_ws,
+.rion_annotation .rion_active
+{
+   font-style:italic;
+   color:#777;
+   font-weight: normal;
+}
+
+/**
+ * End of documentation section 
+ **/
+
+:focus, :active {
+    outline: 0;
+    border: 0;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.rionx_padded_dialog_box {
+   border: 0px;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+   color: white;
+   font-size: 1.1em;
+   max-width: 30em;
+   z-index:95;
+   background-color: #224; /*#448;*/
+   padding-left:1.5em;
+   padding-right:1.5em;
+   padding-top:1.5em;
+   padding-bottom:1.5em;
+   margin: 2.5em;
+}
+
+.rionx_padded_dialog_box_mobile {
+   border: 0px;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+   color: white;
+   font-size: 3.0em;
+   max-width: 30em;
+   z-index:95;
+   background-color: #224; /*#448;*/
+   padding-left:1.5em;
+   padding-right:1.5em;
+   padding-top:1.5em;
+   padding-bottom:1.5em;
+   margin: 2.5em;
+}
+
+.shoe {
+   margin-bottom: 7px; 
+}
+
+.rionx_unpadded_dialog_box {
+   border: 0px;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+   color: white;
+   font-size: 1.0em;
+   max-width: 25em;
+   z-index:100; /* was 95, changed 2015/09/28 */
+   background-color: #333;
+   padding-left:0em;
+   padding-right:0em;
+   padding-top:0em;
+   padding-bottom:0em;
+   margin: 2.5em;
+}
+
+.rionx_padded_dialog_box-warning {
+   background-color: rgb(135, 80, 0);
+}
+
+.rionx_padded_dialog_box-error {
+   background-color: rgb(100, 44, 44);
+}
+
+.rionx_unpadded_dialog_box-warning {
+   background-color: rgb(135, 80, 0);
+}
+
+.rionx_unpadded_dialog_box-error {
+   background-color: rgb(100, 44, 44);
+}
+
+.rionx_padded_dialog_box .rionx_button, .rionx_unpadded_dialog_box .rionx_button  {
+    background:none;
+    border:0px;
+    border-radius:0px;
+    background-color:black;
+    align:center;
+    font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+    font-size: 0.8em;
+    color:white;
+    min-height:3em;
+    min-width:3em;
+    padding-left:1.2em;
+    padding-right:1.2em;
+    margin-top:1.8em;
+}
+
+
+.rionx_padded_dialog_box .rionx_button, .rionx_unpadded_dialog_box .rionx_button  {
+    background:none;
+    border:0px;
+    border-radius:0px;
+    background-color:black;
+    align:center;
+    font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+    font-size: 0.8em;
+    color:white;
+    min-height:3em;
+    min-width:5em;
+    padding-left:1.2em;
+    padding-right:1.2em;
+    margin-top:1.8em;
+}
+
+.rionx_padded_dialog_box_mobile .rionx_button, .rionx_padded_dialog_box_mobile .rionx_button  {
+    background:none;
+    border:0px;
+    border-radius:0px;
+    background-color:black;
+    align:center;
+    font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+    font-size: 0.6em;
+    color:white;
+    min-height:3em;
+    min-width:3em;
+    padding-left:1.2em;
+    padding-right:1.2em;
+    margin-top:1.8em;
+}
+
+
+
+
+.rionx_button:focus  {
+    background-color: rgba(255,255,255,0.2) !important;
+    
+}
+.rionx_button:active  {
+    background-color:rgba(255,255,255,0.2)  !important;
+    
+}
+
+.rionx_padded_dialog_box .rionx_button .rionx_padded_dialog_box-warning, .rionx_unpadded_dialog_box .rionx_button .rionx_padded_dialog_box-warning {
+   background-color:rgb(110,65,0)
+}
+
+
+.rionx_padded_dialog_box .rionx_button .rionx_padded_dialog_box-error, .rionx_unpadded_dialog_box .rionx_button .rionx_padded_dialog_box-error {
+   background-color:rgb(70, 30, 30);
+}
+
+.rionx_padded_dialog_box:hover .rionx_button:hover, .rionx_unpadded_dialog_box:hover .rionx_button:hover  {
+    background-color:#226;
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.rionx_padded_dialog_box:active .rionx_button:active, .rionx_unpadded_dialog_box:hover .rionx_button:hover  {
+    background-color:#226;
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.rionx_header {
+   /* 65, 65, 120 -- idea of blue theme active line */
+    background-color: rgb(60, 60, 96);   /* rgb(50, 50, 118) or #644 */
+    color: #fff;
+    width:100%;
+    padding-top: 0.25em;
+    padding-bottom: 0.35em; /* changed from 0.25em on 2017/05/10 */
+    font-size: 1.2em; /* changed from 1.2em 2018/06/16 */
+    font-family: Roboto,'Segoe UI', 'Open Sans',sans-serif
+    flex: 0 0 auto;
+    /*min-height: 1.56em; -- Removed 2017/05/08 */
+}
+
+.rionx_header_icon_bank {
+    float: right;
+    color: #f7f7f7;
+    margin-right: 1.0em;
+}
+
+.rionx_icon {
+   float: right;
+   padding-left:0.6em;
+   padding-right:0.6em;
+   padding-top:0.15em;
+   padding-bottom:0.15em;
+   overflow: hidden;
+}
+
+.rionx_icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+   color: white;
+   cursor:pointer;
+}
+
+.rionx_icon:active {
+    background-color: #fff;
+   color: rgb(50, 50, 118);
+   cursor:pointer;
+}
+
+
+.rionx_icon_disabled {
+   pointer-events:none;
+   color: #aaaaaa;
+   cursor:not-allowed;
+}
+
+.cursor_drop {
+   cursor:move;
+}
+
+.cursor_nodrop {
+   cursor:no-drop;
+}
+
+.rionx_icon_toggle_on {
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rionx_button_row {
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 0.0em;
+}
+
+.rionx_invisible {
+   display:none;
+}
+
+.rionx_selectionbox:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rionx_button  {
+  flex: 1 1 50%;
+  margin:0.9em;
+  margin-bottom:0.5em;
+}
+
+.rionx_form  {
+  flex-direction:column;
+  display: flex;
+  height: 100%;
+  width: 20em;
+  font-family: Roboto, 'Open Sans', sans-serif;
+  color:white;
+}
+
+.rionx_form_header {
+   flex: 0 0 auto;
+   background-color: inherit;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+   font-size: 1.1em;
+   margin-top:0px;
+   margin-bottom:0.6em;
+   padding: 3x;
+   overflow: hidden;
+   color:white;
+   pitch: 4;
+   padding-top:0.4em;
+   padding-bottom:0.4em;
+   padding-left:0.4em;
+   padding-right:0.4em;
+   border-bottom: 0px;
+   text-shadow: none;
+   border: none;
+}
+.rionx_form_content {
+   font-size: 1.0em !important;
+   margin-left:1.4em;
+}
+
+.rionx_form_content .rionx_form  {
+   flex: 1 1 100%;
+   font-size: 1.2em;
+   margin-bottom:0.8em;
+}
+
+.rionx_form_row .rionx_form{
+   flex-direction:row;
+   margin-bottom:0.8em;
+}
+
+.rionx_form_label .rionx_form{
+   flex: 1 1 10%;
+   margin-bottom:0.4em;
+}
+
+.rionx_form_label {
+      margin-bottom:0.3em;
+}
+
+.rionx_form_widget {
+   margin-bottom:0.4em;
+   margin-left:1.8em;
+}
+
+.rionx_form_widget .rionx_form{
+   flex: 1 1 90%;
+   margin-bottom:0.8em;
+}
+
+.header_details  {
+  flex-direction:column;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.header_details .header {
+   flex: 0 0 auto;
+   background-color: #448;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+   margin-top:4px;
+   margin-bottom:4px;
+   padding: 3x;
+   overflow: hidden;
+   font-size: 0.9em;
+   color:white;
+   pitch: 4;
+   padding:2px;
+   border-bottom: 0px;
+   text-shadow: none;
+   border: none;
+}
+
+.header_details .details {
+  flex: 1 1 100%;
+  overflow: auto;
+}
+
+/** Disables vertical scrollbars in editor **/
+
+.relativepos {
+   position: relative;
+}
+
+.ace_scrollbar-v {
+   display: none !important;
+}
+
+.ace_scrollbar-h {
+   display: none !important;
+   overflow-x:hidden;
+}
+
+.fillwidtheheight {
+   width: 100%;
+   height:100%;   
+}
+
+#topbar {
+    width: 100%;
+    background-color: rgb(47, 49, 41);
+}
+
+#menuleftcontent {
+   background-color: rgb(47, 49, 41);
+   float: left;
+   width:100%;
+   height:100%;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+
+#codegenassetlist {
+   /*width: 20em;*/
+   background-color: rgb(47, 49, 41);
+   float: left;
+   width:100%;
+   height:100%;
+   overflow-y: auto;
+   position: absolute; /* This may not work if we enbbed the parent frame in something else .. keep an eye on this, without this we seem not to have scrollbars*/
+   font-size:0.9em !important
+}
+
+
+
+.menu-popup {
+   z-index:500;
+}
+
+.rionxflavor.gwt-MenuBar-vertical .gwt-MenuItem  {
+   padding: 3px 4px;
+   color:red;
+}   
+
+.rionxflavor.menu-popup td  {
+    z-index:500;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Roboto', 'Open Sans', sans-serif !important;
+    transition-duration: 0.1s;
+    padding-left: 9px !important;
+    cursor: pointer !important;
+    border-width: 0 !important;
+    font-size: 1.0em !important;
+    opacity: 1.0;
+    border-color: rgb(47, 49, 41) !important;
+    background-color: rgb(36, 36, 36) !important;
+}
+
+.rionxflavor.menu-popup td:hover:not(.gwt-MenuItemSeparator), .rionxflavor.menu-popup td:focus  {  
+   font-family: 'Roboto', 'Open Sans', sans-serif !important;
+   transition-duration: 0.1s; 
+   padding-left: 9px !important;
+   cursor: pointer !important;
+   border-width: 0 !important;
+   border-color: rgb(47, 49, 41) !important;
+   background-color: rgb(48, 48, 80) !important;
+   color: rgb(255, 255, 255) !important;
+}
+
+.rionxflavor.gwt-MenuBar-vertical .gwt-MenuItemSeparator .menuSeparatorInner {
+  height: 1px;
+  padding: 0px;
+  border: 0px;
+  border-top: 1px solid #555;
+  overflow: hidden;
+  cursor:initial;
+  border-color: rgb(60, 60, 60) -moz-use-text-color -moz-use-text-color !important;
+}
+
+.rionx_row {
+   width:100%;
+   text-align:left;
+   padding-bottom: 0.4em; 
+   padding-top: 0.4em; 
+}
+
+.rionx_row:hover, .rionx_row:active, .rionx_row:focus {
+   background-color: rgb(78, 48, 48) !important;
+   cursor: pointer;
+   transition-duration: 0.2s;
+ }
+
+.rionx_fileviewrow {
+   width:100%;
+   text-align:left;
+   padding-bottom: 0.0em; 
+   padding-top: 0.0em;
+   text-size:0.8em; 
+}
+
+.rionx_fileviewrow:hover {
+   background-color: rgb(78, 48, 48) !important;
+   cursor: pointer;
+   transition-duration: 0.2s;
+}
+       
+.rionx_searchbox_header {
+   text-indent: 0.7em;
+   font-size: 1.0em;
+   font-weight: bold;
+   padding-bottom: 0.1em; 
+   padding-top: 0.3em;
+   background-color: rgb(48,48,48);  
+   color: #fff;
+}
+
+.rionx_searchbox_header input[type="text"]  {
+   background-color: rgb(48,48,48);
+   color: white;
+   font-family: Roboto, 'Open Sans', sans-serif;
+   border-bottom-width: 0px;
+   border-right-width: 0px;
+   border-left-width: 0px;
+   border-top-width: 0px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   width: 16em;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;       
+   outline: none;
+   font-style: italic;
+   font-weight: bold;
+   font-size: 1.1em;
+   transition-duration: 0.2s;
+}
+ 
+.rionx_searchbox_header input[type="text"]:hover {
+  font-size: 1.2em;
+  transition-duration: 0.2s;
+}
+     
+.header0 , .header, .header1, .header2, .header3, .header4, .header5 {
+  text-indent: 0.7em;
+  font-size: 1.0em;
+}
+
+.header0 {
+  background-color: #fff;  
+  color: rgb(48,48,48);
+}
+
+.header {
+  background-color: #07A;  
+  color: #fff;
+}
+
+.header2 { 
+  background-color: #70A;  
+  color: #fff;
+}
+
+.header3 {     
+  background-color: #080;  
+  color: #fff;
+}
+ 
+.header4 {     
+  color: rgb(240, 240, 240);
+}
+
+.header4:hover {
+  background-color: #336;
+  cursor: pointer;
+}
+
+.header4a {     
+  color: rgb(240, 240, 240);
+}
+
+.header4a:hover {
+  background-color: #336;
+  cursor: pointer;
+}
+
+.header5 {     
+    background-color: #800;  
+    color: #fff;
+}
+ 
+.rionx_form_widget  {
+    background-color: rgba(0,0,0,0.15);
+    padding: 0.33em;
+    opacity: 8.8;
+    color:white;
+    border: 0px;
+    font-family: Roboto, 'Open Sans', sans-serif !important;
+    border-bottom: 2px];
+    border-color: white;
+    font-size: 0.7em;
+    transition-duration: 0.3s;
+}
+ 
+.rionx_form_widget:hover  {
+   background-color: rgba(255,255,255,0.15);
+}
+
+.rionx_form_widget:active  {
+   background-color: rgba(255,255,255,0.15);
+}
+
+.rionx_form_widget:focus  {
+   background-color: rgba(255,255,255,0.15);
+}
+
+.rionx_form_widget_error {
+  background-color: #700 !important;
+}
+
+.error_button {
+  background-color: rgb(41, 41, 41) !important;
+  color: rgb(61, 61, 61) !important;
+}
+
+
+input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus, {
+   background-color: #666;
+   outline: none;
+}
+   
+.tree_items, .tree_items2, .tree_items3, .tree_items4, .tree_items5 {
+ font-size: 0.8em;
+ text-indent: 2.6em;    
+}
+ 
+
+
+.tree_items {
+    background-color: #09D;  
+    color: #fff;
+}
+ 
+.tree_items2 {
+  background-color: #A0E;  
+  color: #fff;
+}
+
+.tree_items3 {
+  background-color: #090;
+  color: #fff;
+}
+
+.tree_items4 {
+  background-color: #666;
+  color: #fff;
+}
+
+.tree_items5 {
+  background-color: #a00;
+  color: #fff;
+}
+
+.toppanelstyle {
+   color: white;
+   background-color: rgb(48,48,48);
+   font-family: 'Roboto', sans-serif !important;
+}
+
+.toppanelstyle2 {
+   font-family: 'Roboto', sans-serif !important;
+   color: white;
+   text-align: right;
+   background-color: rgb(48,48,48);
+}
+
+.rionxflavor .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs  {
+   background: none repeat scroll 0% 0% rgb(39, 40, 34) !important;
+   font-family: 'Roboto', sans-serif !important;
+   font-weight: normal !important;
+}
+
+.rionxflavor .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+   background-color: rgb(100, 100, 100) !important;
+   color: #999 !important;
+   font-family: 'Roboto', sans-serif !important;
+}
+
+.rionxflavor .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+     border-radius: 0px 0px 0px 0px !important;
+     padding: 0px 15px;
+}
+
+.rionxflavor .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+   background-color: #0000aa !important;
+   color: rgb(255, 255, 240) !important;
+   font-family: 'Roboto', sans-serif !important;
+   margin-right: 3px important!;
+   margin-left: 0px important!;
+   font-weight: normal !important;
+}
+
+.rionxflavor .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+   padding-left: 0px !important;
+}
+
+.rionxflavor .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+   margin-right: 3px important!;
+   margin-left: 0px important!;
+}
+
+.mymargin {
+    margin: 4px;
+}
+
+.rionxbuttons {
+   border-color : #888 !important;
+   border-width : none !important;
+   font-family: 'Roboto', sans-serif !important;
+   margin-left : 2px ;
+   margin-right: 8px ;
+   margin-top: 5px ;
+   margin-bottom: 2px ;
+   border-radius: 0;
+   border-style: none;
+   border-width: 0px;
+   min-width: 100px;
+   padding: 5px 7px;
+   background: #888;
+   color: white;
+   font-size: 0.9em !important;
+}
+
+.rionxbuttons:focus {
+   color: white;
+}
+
+.rionx_dark_theme {
+   background-color: rgb(48,48,48);
+   background: rgb(48,48,48) !important;
+}
+
+.rionx_dark_theme .gwt-SplitLayoutPanel-VDragger {
+   background-color: rgb(47, 49, 41) !important;
+   background: rgb( 47, 49, 41) !important;
+}
+
+.rionx_dark_theme .gwt-SplitLayoutPanel-VDragger {
+  background: rgb(47, 49, 41);
+  cursor: row-resize;
+}
+
+.rionxflavor .gwt-SplitLayoutPanel-HDragger, .rionxhdragger {
+   background-color: rgb(47, 49, 41) !important;
+   background: rgb(47, 49, 41) !important;
+   cursor: col-resize;
+}
+
+.rionxflavor .gwt-SplitLayoutPanel-VDragger, .rionxvdragger {
+   background-color: rgb(47, 49, 41) !important;
+   background: rgb(47, 49, 41) !important;
+   cursor: row-resize;
+}
+
+.rionxbuttons:hover {
+    border-color : white;
+    background-color: white;
+    background: white;
+    color: black;
+}
+
+.generate {
+   margin-top: 10px;
+   margin-right: 10px;
+   padding: 14px 26px;
+   font-size: 14px;
+   line-height: 100%;
+   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+   color: #fff;
+   display:inline-block;
+   vertical-align: middle;
+   text-align: center;
+   cursor: pointer;
+   font-weight: bold;
+   transition: background 0.1s ease-in-out;
+   -webkit-transition: background 0.1s ease-in-out;
+   -moz-transition: background 0.1s ease-in-out;
+   -ms-transition: background 0.1s ease-in-out;
+   -o-transition: background 0.1s ease-in-out;
+   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+   color: #fff;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.generate:active {
+   padding-top: 15px;
+   margin-bottom: -1px;
+}
+
+.generate, .generate:hover, .generate:active {
+   outline: 0 none;
+   text-decoration: none;
+   color: #fff;
+}
+
+.generate1 {
+   background-color: #3fb8e8;
+   box-shadow: 0px 3px 0px 0px #3293ba;
+}
+
+.generate1:hover {
+   background-color: #1baae3;
+}
+
+.generate1:active {
+   box-shadow: 0px 1px 0px 0px #3293ba;
+}
+
+div.image img {
+   padding: 0px;
+   max-width:100% !important;
+   max-height:auto;
+   display:block;
+}
+
+div.incode  {
+  background: #fff;
+  padding: 4px;
+  font-size: 11px;
+  text-align: left;
+  font-family: monospace;
+   width: 98%;
+   max-width: 98%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@media print {
+   h1 {page-break-before:always;}
+}
+
+
+
+div.incode  {
+  padding: 5px;
+  font-size: 11px;
+  text-align: left;
+  font-family: monospace;
+  border: 1px dashed #cccccc;
+  max-width: 95%;
+}
+
+.rionx_preview_input {
+   width: 100%;
+   height: 100%;
+   /* CHROME DOESN't LIKE THESE PROPERTIES....
+   white-space: nowrap;
+   overflow: auto; */
+}
+
+
+.problems_view, td .problems_view {
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono', monospace;
+   background-color: rgb(47, 49, 41);
+   overflow: auto;
+}
+
+
+
+.ace_tooltip, .ace_doc-tooltip {
+   background-image: none !important;
+   background-color: rgb(47, 49, 41) !important;
+   color: #ddd !important;
+   max-width: 540px !important;
+   white-space: normal !important;
+   word-wrap:normal !important;
+   text-align: left !important;
+   border-color: #333 !important;
+   font-size: auto !important;
+   box-shadow: none !important;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro',monospace !important;
+   font-size: 1.00em;
+}
+
+.ace_editor {
+   font-family:'Source Code Pro', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'Source Code Pro', monospace
+}
+
+.ace_editor.ace_autocomplete {
+   margin-top:0px !important;
+   margin-left:6px !important;
+   color: #ddd !important;
+   background-color: rgb(47, 49, 41) !important;
+   border-color: #333 !important;
+   font-size: 14px !important;
+   font-family: Roboto, 'Open Sans', 'Droid Sans Mono','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro',monospace !important;
+}
+
+.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+   color: black !important;
+   background-color: rgb(90,50,50) !important;
+}
+
+.ace_line-hover {
+   color: black !important;
+   background-color: rgb(90,50,50) !important;
+}
+
+.ace_editor.ace_autocomplete .ace_marker-layer .ace_line-hover {
+   color: black !important;
+   background-color: rgb(70,70,70) !important;
+   border-color : #222 !important;
+}
+
+.ace_editor.ace_autocomplete .ace_completion-highlight {
+   color: #fff !important;
+   font-weight: normal !important;
+   text-shadow: 0px 0px 0.01em !important;
+}
+
+.ace_rightAlignedText {
+   color:#ddd !important;
+}
+
+.rionxflavor.gwt-TabLayoutPanel {
+   background: none repeat scroll 0% 0% rgb(50, 50, 118) !important;
+}
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs  {
+   background: none repeat scroll 0% 0% rgb(50, 50, 118) !important;
+   font-family: 'Segoe UI', Roboto, 'Open Sans', sans-serif !important;
+   vertical-align: center !important;
+}  
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+   background-color: rgb(50, 50, 118) !important;
+   color: #ddd !important;
+   font-family: 'Segoe UI', Roboto, 'Open Sans', sans-serif !important;
+   font-weight:normal !important;
+   font-size: 1.2em !important;
+   vertical-align: center !important;
+   min-height:1.69em;
+}
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+   border-radius: 0px 0px 0px 0px !important;
+   padding-top:0.25em;
+   padding-bottom:0.35em;
+   min-width: 2.9em !important;
+   font-size: 0.9em;
+   margin-left: 0px !important;
+} 
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+   background-color: rgba(255,255,255,0.08) !important;
+   color: rgb(255, 255, 255) !important;
+   font-family: 'Segoe UI', Roboto, 'Open Sans', sans-serif !important;
+   margin-right: 0px important!;
+   margin-left: 0px important!;
+   vertical-align: center !important;
+   margin-top:20px !important;
+   min-height:1.69em;
+   font-size: 1.03em;
+}
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+   padding-left: 0px !important;
+}
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+   margin-right: 0px important!;
+   margin-left: 0px important!;
+   
+}
+/*
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+   padding-top:0px !important;
+}*/
+
+.rionxflavor.gwt-TabLayoutPanel .gwt-TabLayoutPanelContentContainer {
+   border-width:0px !important;
+}
+
+.mymargin {
+   margin: 4px;
+}
+
+
+@media print {
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+}
+
+@media screen {
+thead { /*display: block; -- commented out as disrupting problems view*/ }
+tfoot { /*display: block; -- commented out as disrupting problems view*/) }
+}
