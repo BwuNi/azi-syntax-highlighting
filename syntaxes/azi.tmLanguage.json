@@ -6,52 +6,35 @@
 			"include": "#number"
 		},
 		{
-			"include": "#sign"
+			"include": "#keyword"
+		},
+		{
+			"include": "#name"
 		},
 		{
 			"include": "#strings"
-		},
-		{
-			"include": "#order"
-		},
-		{
-			"include": "#begin"
-		},
-		{
-			"include": "#end"
 		}
 	],
 	"repository": {
-		"sign": {
-			"patterns": [{
-				"name": "constant.language.azi",
-				"match": "\\b[a-z]([a-z]|[A-Z]|[0-9])*\\b"
-			}]
-		},
-		"order": {
+
+		"keyword": {
 			"patterns": [{
 				"name": "keyword.control.azi",
-				"match": "((^`)||(\\s`))([a-z]([a-z]|[A-Z]|[0-9])*)\\b"
+				"match": "\\b(let)\\b"
 			}]
 		},
+		"name": {
+			"patterns": [{
+				"name": "constant.language.azi",
+				"match": "\\b([a-z]([a-z]|[A-Z]|[0-9])*)\\b"
+			}]
+		},
+		
 		"number":{
 			"patterns": [{
 				"name": "entity.other.attribute-name.azi",
 				"match": "\\b[0-9]+\\b"
 			}]	
-		},
-		"begin": {
-			"patterns": [{
-				"name": "entity.azi",
-				"match": "\\["
-			}]
-		},
-		
-		"end": {
-			"patterns": [{
-				"name": "entity.azi",
-				"match": "\\]"
-			}]
 		},
 		"strings": {
 			"name": "string.quoted.double.azi",
